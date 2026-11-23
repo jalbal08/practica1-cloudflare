@@ -1,0 +1,23 @@
+
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "practica1",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "AMBIENTE": "produccion"
+  },
+  "env": {
+    "staging": {
+      "observability": {
+        "enabled": true
+      },
+      "vars": {
+        "AMBIENTE": "staging"
+      }
+    }
+  }
+}
